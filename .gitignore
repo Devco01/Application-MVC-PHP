@@ -1,0 +1,28 @@
+# Fichiers de configuration
+*.env
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+
+# Dossiers de dépendances
+/vendor/
+/node_modules/
+
+# Fichiers de log
+/logs/
+*.log
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.swp
+
+# Fichiers de configuration IDE
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Fichiers de cache
+/*.cache 
