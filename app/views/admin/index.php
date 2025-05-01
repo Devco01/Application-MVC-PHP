@@ -12,31 +12,37 @@ ob_start();
     
     <div class="row">
         <div class="col-md-4 mb-4">
-            <div class="card bg-primary text-white">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">Gestion des utilisateurs</h5>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Gestion des utilisateurs</h5>
                     <p class="card-text">Consulter la liste des utilisateurs de l'application.</p>
-                    <a href="<?= BASE_URL ?>admin/users" class="btn btn-light">Voir les utilisateurs</a>
+                    <a href="<?= BASE_URL ?>admin/users" class="btn btn-primary">Voir les utilisateurs</a>
                 </div>
             </div>
         </div>
         
         <div class="col-md-4 mb-4">
-            <div class="card bg-success text-white">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">Gestion des agences</h5>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Gestion des agences</h5>
                     <p class="card-text">Gérer les agences (création, modification, suppression).</p>
-                    <a href="<?= BASE_URL ?>admin/agencies" class="btn btn-light">Gérer les agences</a>
+                    <a href="<?= BASE_URL ?>admin/agencies" class="btn btn-primary">Gérer les agences</a>
                 </div>
             </div>
         </div>
         
         <div class="col-md-4 mb-4">
-            <div class="card bg-info text-white">
+            <div class="card shadow">
+                <div class="card-header bg-dark text-white">
+                    <h5 class="mb-0">Gestion des trajets</h5>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title">Gestion des trajets</h5>
                     <p class="card-text">Consulter et gérer tous les trajets de l'application.</p>
-                    <a href="<?= BASE_URL ?>admin/rides" class="btn btn-light">Gérer les trajets</a>
+                    <a href="<?= BASE_URL ?>admin/rides" class="btn btn-primary">Gérer les trajets</a>
                 </div>
             </div>
         </div>

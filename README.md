@@ -58,7 +58,18 @@ mysql -u utilisateur -p nom_base_de_donnees < database/sample_data.sql
 
 6. Assurez-vous que le serveur web pointe vers le dossier `public` de l'application
 
-7. Configurez un virtualhost pour que l'URL de base soit accessible
+7. Configurez un virtualhost pour que l'URL de base soit accessible (voir [Configuration du VirtualHost](docs/virtualhost.md) pour des instructions détaillées)
+
+### IMPORTANT POUR LE CORRECTEUR
+
+Pour lancer correctement ce projet sur votre machine, veuillez suivre attentivement les instructions détaillées dans le document [Configuration du VirtualHost](docs/virtualhost.md). Ce document explique pas à pas comment :
+
+- Modifier le fichier hosts sur Windows
+- Configurer le VirtualHost dans XAMPP
+- Vérifier que la configuration fonctionne correctement
+- Configurer la base de données
+
+Ces étapes sont essentielles pour que l'application fonctionne avec son URL personnalisée `http://covoiturage.local`.
 
 ## Structure du projet
 
