@@ -70,6 +70,8 @@ mysql -u utilisateur -p nom_base_de_donnees < database/sample_data.sql
 │   ├── database/           # Scripts SQL
 │   ├── models/             # Modèles de données
 │   └── views/              # Vues de l'application
+├── database/               # Scripts SQL pour création et données de test
+├── docs/                   # Documentation du projet
 ├── public/                 # Dossier public accessible par le web
 │   ├── css/                # Feuilles de style
 │   ├── js/                 # Scripts JavaScript
@@ -105,7 +107,7 @@ mysql -u utilisateur -p nom_base_de_donnees < database/sample_data.sql
 
 ### MCD (Modèle Conceptuel de Données)
 
-Le MCD est disponible dans le fichier `docs/mcd.png`.
+Le MCD est disponible sous forme textuelle dans le fichier `docs/mcd.txt` et documenté dans `docs/model.md`.
 
 ### MLD (Modèle Logique de Données)
 
@@ -114,6 +116,8 @@ USERS (id, lastname, firstname, email, password, phone, is_admin)
 AGENCIES (id, name)
 RIDES (id, departure_agency_id, arrival_agency_id, departure_datetime, arrival_datetime, total_seats, available_seats, user_id)
 ```
+
+Une documentation plus détaillée du modèle de données est disponible dans le fichier `docs/model.md`.
 
 ## Développement
 
@@ -136,4 +140,4 @@ Ce projet est développé dans le cadre d'un exercice pédagogique et n'est pas 
 
 ---
 
-© 2024 - CENEF - MVC PHP 
+© 2025 - MVC PHP

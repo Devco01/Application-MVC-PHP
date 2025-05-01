@@ -1,0 +1,17 @@
++-----------------+        +-----------------+        +------------------+
+|      USER       |        |      RIDE       |        |      AGENCY     |
++-----------------+        +-----------------+        +------------------+
+| id              |<-------|user_id          |        | id               |
+| lastname        |        |departure_datetime|        | name             |
+| firstname       |        |arrival_datetime  |        +------------------+
+| email           |        |total_seats       |               ∧
+| password        |        |available_seats   |               |
+| phone           |        +-----------------+               |
+| is_admin        |                ∧                         |
++-----------------+                |                         |
+                                   |                         |
+                       +-----------+-----------+             |
+                       |                       |             |
+             departure_agency_id         arrival_agency_id   |
+                       |                       |             |
+                       +--------------------+--+-------------+ 
