@@ -53,7 +53,6 @@ ob_start();
                                         <?= htmlspecialchars($ride['firstname'] . ' ' . $ride['lastname']) ?>
                                     </td>
                                     <td>
-                                        <a href="<?= BASE_URL ?>admin/editRide/<?= $ride['id'] ?>" class="btn btn-sm btn-primary">Modifier</a>
                                         <a href="<?= BASE_URL ?>admin/deleteRide/<?= $ride['id'] ?>" class="btn btn-sm btn-danger" onclick="return confirm('Êtes-vous sûr de vouloir supprimer ce trajet ?')">Supprimer</a>
                                     </td>
                                 </tr>
