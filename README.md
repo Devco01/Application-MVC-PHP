@@ -71,25 +71,6 @@ Pour lancer correctement ce projet sur votre machine, veuillez suivre attentivem
 
 Ces étapes sont essentielles pour que l'application fonctionne avec son URL personnalisée `http://covoiturage.local`.
 
-## Structure du projet
-
-```
-├── app/                    # Dossier principal de l'application
-│   ├── config/             # Configuration de l'application
-│   ├── controllers/        # Contrôleurs MVC
-│   ├── core/               # Classes principales du framework MVC
-│   ├── database/           # Scripts SQL
-│   ├── models/             # Modèles de données
-│   └── views/              # Vues de l'application
-├── database/               # Scripts SQL pour création et données de test
-├── docs/                   # Documentation du projet
-├── public/                 # Dossier public accessible par le web
-│   ├── css/                # Feuilles de style
-│   ├── js/                 # Scripts JavaScript
-│   └── index.php           # Point d'entrée de l'application
-└── README.md               # Ce fichier
-```
-
 ## Utilisation
 
 ### Comptes de démonstration
@@ -102,53 +83,5 @@ Ces étapes sont essentielles pour que l'application fonctionne avec son URL per
   - Email : simple@example.com
   - Mot de passe : simple123
 
-### Fonctionnalités principales
-
-1. **Consultation des trajets disponibles** : Accessible à tous les visiteurs, affiche les trajets à venir avec des places disponibles.
-
-2. **Connexion** : Les utilisateurs peuvent se connecter pour accéder à des fonctionnalités supplémentaires.
-
-3. **Création de trajet** : Les utilisateurs connectés peuvent proposer de nouveaux trajets.
-
-4. **Modification/Suppression** : Les utilisateurs peuvent gérer leurs propres trajets.
-
-5. **Administration** : Interface d'administration pour gérer les utilisateurs, agences et trajets.
-
-## Modèle de données
-
-### MCD (Modèle Conceptuel de Données)
-
-Le MCD est disponible sous forme textuelle dans le fichier `docs/mcd.txt` et documenté dans `docs/model.md`.
-
-### MLD (Modèle Logique de Données)
-
-```
-USERS (id, lastname, firstname, email, password, phone, is_admin)
-AGENCIES (id, name)
-RIDES (id, departure_agency_id, arrival_agency_id, departure_datetime, arrival_datetime, total_seats, available_seats, user_id)
-```
-
-Une documentation plus détaillée du modèle de données est disponible dans le fichier `docs/model.md`.
-
-## Développement
-
-### Documentation du code
-
-Le code est documenté selon la norme DocBlock pour faciliter sa maintenance et sa réutilisation.
-
-### Tests
-
-Des tests unitaires sont disponibles dans le dossier `tests/`. Pour les exécuter :
-
-```
-cd tests
-phpunit
-```
-
-## Licence
-
-Ce projet est développé dans le cadre d'un exercice pédagogique et n'est pas sous licence open-source.
-
----
 
 © 2025 - MVC PHP
